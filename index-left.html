@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2017CPD留言</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<style type="text/css">
+html,body,.wrapper{
+	/*background-image: url(images/bg-left.jpg) ;*/
+	background-color: black;
+}
+.userCommit{
+	position: absolute;
+    white-space: nowrap;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+</div>
+</body>
+<script>
+	var cpd = [
+		'Amo. W：从青涩少年到职场骨干.欧莱雅一直陪伴着我成长.2017年祝愿欧莱雅团队稳定.生意蒸蒸日上.',
+		'Bella：作为后勤部门，一路以来全力支持CPD，感到万分荣幸！荣辱与共，以后要更加努力！',
+		'Cherry：#我和CPD 2017再创佳绩！',
+		'cynthia：期待和CPD的每一次邂逅，每一次的惊喜，美一天的美丽',
+		'Darren：高效，责任，执行!承载了每个欧家人的梦想，祝福越来越好，销售增长如芝麻开花，节节高!',
+		'eva yu：作为合作多年的经销商，深感CPD部是个优质的合作平台，更是一支专业优秀的合作团队!CPD再创辉煌！',
+		'Hr：CPD是我家 我爱CPD！',
+		'Jacky Wu：万众一心，王者归来',
+		'Jenny 陈晔：在我困惑，无助的时候能有懂你的同事和老板。我想说我真的很幸福…',
+		'Leo：做我们这一行，几乎每年生日和节日都在外地过。今年同事给了我一个温暖难忘的生日part！感恩欧家大家庭',
+		'LRLLYM：有一次在经销商办公室中午因为工作没及时出去吃饭，经销商业务经理直接默默带了饭给我，很感动',
+		'Lyn Zhu：#我和CPD  祝愿CPD Training团队越来越好[玫瑰][玫瑰][太阳][太阳][太阳]',
+		'Magic. ：我和CPD在一起：12年晋升为CS，晋升后体会到的第一句话：展现自己 抓住机会 实现自我',
+		'Michael.D.辛：祝CPD再创辉煌，永远爱你',
+		'Norry：期待欧莱雅，耀变-新生',
+		'Sreven.Wang：CPD是一个节奏快速，有活力，蒸蒸日上的团队。能在这里服务感到荣幸，也学到很多，成长很多。',
+		'Toby：CPD辉煌了20年，祝愿CPD有更多的20年辉煌！永远辉煌！',
+		'ZJY：衷心的祝愿CPD部门各位亲爱的同事们及家人工作顺利，万事顺意，阖家欢乐。',
+		'不得招摇：祝福CPD越来越好，征途漫漫，势必亮如繁星！',
+		'丽丽：我和CPD在一起：08年晋升二星BA，BA时记住的第二句话，是金子总会发光，如果你是…请让我看见',
+		'丽人丽妆熊猫：我和CPD在一起，05年加入欧莱雅这个大家庭，BA时记住的第一句话：金钱独立人格就独立了',
+		'六球：今年是我和CPD相爱的第十个年头，感谢一路以来的相知相伴，未来的日子里让我们耀一起耀变美！',
+		'大大大云少：跟欧莱雅的缘分是从16年前开始的，上大学的时候开始用欧莱雅。爱欧莱雅，就像爱自己的青春',
+		'孙：CPD永远都不缺少变化和创新，这也是我喜欢欧莱雅的原因，加油CPD！',
+		'戴杨：感恩欧莱雅，五年计划，搬了新家，儿子1岁，儿女双全。欧莱，我的世界，美的世界',
+		'李会香：团队协作精神',
+		'李淑莉：我和CPD在一起：17年加入欧家12年，有感动 有欢笑 有泪水。“你”不弃我不离，永远和“你”在一起',
+		'李贵湖：蒸蒸日上 与荣俱荣～',
+		'武小雅：我在欧莱雅工作7年了，负责烟台区域货架生意。感谢烟台地区的经销商瑞诺商贸有限公司的支持。',
+		'火星的旅行者：越来越好',
+		'祝愿CPD-MNY：Training团队越来越好',
+		'独自看海：加入CPD近9年，希望CPD越来越好！大麦！',
+		'王坤：感动在欧家7年的时光，跟我的老板同甘共苦。我❤️我的老板！我❤️我们团队！加油！',
+		'盛妆黄茂薪：我和CPD一直在一起：05年晋升为AM，晋升后体会的第一句话：人无完人 重在反思 明确目标 冲…',
+		'石军平：MNY全新上市了让我们期待许久的半永久染眉膜胶，简直是无眉星人的大救星呐！一画一揭持久三天，太喜欢啦',
+		'禹：我和CPD在一起：09年参加了彩妆大赛晋升为柜长，BA时记住的第三句话，付出总会有回报',
+		'程：拼彩妆，游巴黎 活动中，我的团队成就了我巴黎之行，让我感受到凯旋门下英雄归来的那种荣誉感！',
+		'自由：感谢一路走来美宝莲培训大家长Vingo老板的关心，帮助及有爱的团队。希望下个十年大家紧紧在一起！',
+		'芷青：加入CPD近一年，让我认识到欧莱雅就是一个“美”的公司，美丽的同事，美丽的产品，美丽的工作。',
+		'贾利：在CPD三年，每年都有巨大的变化，愿CPD越变越好，越变越美！',
+		'郑云：加入欧家已有10年，在欧家，挥洒着汗水，青春，收获着成就感和同事间的友谊，愿我们的团队继续一起前进',
+		'钱伟：祝同事们工作顺利，万事如意！',
+		'陆柳文：节奏超快 一刻不得闲 但是成长更快 加入CPD一年 每一天都有新任务 不断挑战自己',
+		'陈江阳：我和CPD在一起：09年晋升为JCS，晋升后体会到的第一句话：机会是给有准备的人',
+	];
+	var color = [
+		// '#61c6a1',//绿
+		'#feffad',//米黄
+		'#feffad',//米黄
+		'#feffad',//米黄
+		'#feffad',//米黄
+		// '#16fbf6',//蓝绿
+		'#ffffff',//
+		'#ffffff',//
+		// '#aad5a3',//灰绿
+		// '#a390bd',//淡紫
+		// '#a390bd',//淡紫
+		'#cf90bd',//墨紫
+		'#cf90bd',//墨紫
+		'#cf90bd',//墨紫
+		'#cf90bd',//墨紫
+		// '#66ccff',//淡蓝
+		// '#66ccff',//淡蓝
+		// '#54b559',//墨绿
+		// '#ffc865',//深黄
+		'#ffffff',
+	]
+	function ScrollCommit(string,color){
+		this.obj = string || ['please add words'];
+		this.colorList = color;
+		this.init();
+	}
+	ScrollCommit.prototype = {
+		init:function(){
+			this.setAni();
+		},
+		setAni:function(){
+			for(var i = 0,len = this.obj.length;i < len;i++){
+				this.index = i;
+				this.delay = Math.floor(Math.random() * 10) * 3;
+				this.time = (Math.floor(this.index)+20);
+				this.fontsize = 30 + Math.floor(Math.random() * 10) * 2;
+				this.fontcolor = this.colorList[Math.floor(Math.random()*10)] || '#ffffff';
+				this.zIndex = this.index;
+				this.initialize();
+				this.setCss();
+				this.addKeyframes();
+			}
+		},
+		initialize:function(){
+			this.container = document.querySelector('.wrapper');
+			this.newNode = document.createElement("p");
+			this.newNode.className = 'userCommit';
+			this.newNode.innerHTML = this.obj[this.index];
+			this.container.appendChild(this.newNode);
+			this.userCommit = document.querySelectorAll('.userCommit')[this.index];
+			this.line = Math.floor(this.container.offsetHeight/24);
+			this.top = this.line * this.index;
+			this.top = this.top > (this.container.offsetHeight - this.userCommit.offsetHeight)?this.top - (this.container.offsetHeight -this.userCommit.offsetHeight):this.top;
+		},
+		setCss:function(){
+			this.userCommit.style.top = this.top+'px';
+			this.userCommit.style.fontSize = this.fontsize + 'px';
+			this.userCommit.style.color = this.fontcolor;
+			this.userCommit.style.zIndex = this.zIndex;
+			this.contentWidth = this.userCommit.offsetWidth;
+			this.userCommit.style.width = this.contentWidth + 'px';
+			this.userCommit.style.right = -this.contentWidth + 'px';
+			this.userCommit.style.animation = 'commitAni'+ this.index +' '+ this.time +'s linear '+ this.delay +'s infinite';
+			//animation简写方式
+		},
+		addKeyframes:function(){
+			this.rule = "@keyframes commitAni"+ this.index +"{0% {transform: translate3d(0,0,0)}" + this.index * 2 +"% {transform: translate3d(0,0,0)}" + "100% {transform: translate3d("+  -(window.innerWidth + this.contentWidth) +"px,0,0)}"
+			this.style = document.styleSheets[document.styleSheets.length-1];
+			try {
+			  this.style.insertRule(this.rule, this.style.rules.length);
+			} catch (e) {
+				console.log(e)
+			};
+			// style.deleteRule(style.rules.length);
+		}
+	}
+	var scrollCommit = new ScrollCommit(cpd,color);
+
+</script>
+</html>
